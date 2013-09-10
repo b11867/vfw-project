@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
     <head>
       <meta charset="utf-8"/>
@@ -12,30 +11,46 @@
     </head>
     <body>
         <hgroup>
-            <h1>Contact's</h1>
+            <h1>Contact-O</h1>
             <h2>Please enter new contact information below</h2>
             </hgroup>
-        <form action="" method="post">
+        <form action="#" method="post">
             <fieldset id="basic info">
                 <legend>Information</legend>
                 <ul>
                     <li><label for="fname">First Name:</label><input type="text" id="fname"/></li>
-                    <li><label for="lname">Last Name:</label><input type="text" id="lname"/></li>
+                    <li><label for="lname">Last Name:</label><input type="text" id="lname" required/></li>
                     <li><label for="email">Email:</label><input type="email" id="email" placeholder="johndoe@abc.com"/></li>
-                    <li><label for="phone">Phone Number:</label><input type="text" id="phone"/></li>
-                    <li><input type="radio" value="Family" id="family"/><label for="family">Family</label></li>
-                    <li><input type="radio" value="Friend" id="friend"/><label for="friend">Friend</label></li>
-                    <li><input type="radio" value="Co-worker" id="co-worker"/><label for="co-worker">Co-Worker</label></li>
-                    <li><input type="radio" value="Bussiness" id="bussiness"/><label for="bussiness">Bussiness Contact</label></li>
-
+                    <li><label for="phone">Phone Number:</label><input type="text" id="phone" placeholder="123-456-7890"/></li>
                 </ul>
+                    <li>What is your relationship to this contact?
+                        <ul>
+                            <li><input type="radio" value="Family" id="family" name="relation"/><label for="family">Family</label></li>
+                            <li><input type="radio" value="Friend" id="friend" name="relation"/><label for="friend">Friend</label></li>
+                            <li><input type="radio" value="Co-worker" id="co-worker" name="relation"/><label for="co-worker">Co-Worker</label></li>
+                            <li><input type="radio" value="Bussiness" id="bussiness" name="relation"/><label for="bussiness">Bussiness Contact</label></li>
+                        </ul>
+                    </li>
             </fieldset>
-            <fieldset id="optional info">
-                <legend>Questions</legend>
-                <ul>
-                    <li></li>
-                </ul>
+            <fieldset id="optimized info">
+                <legend>Optimization</legend>
+                    <li>
+                        <label for="method">Preferred Communication</label>
+                        <select id="method">
+                            <optgroup label="Choose a method of Communication">
+                                <option value="Phone">Phone</option>
+                                <option value="Text">Text</option>
+                                <option value="Email">Email</option>
+                                <option value="Facetime">Facetime</option>
+                            </optgroup>
+                        </select>
+                        <li><label for="rate">How often do you communicate?</label><input type="range" name="rating"></li>
+                        <li><label for="birthday">Contact's Birthday</label><input type="date" id="birthday"/></li>
+                        <li><label for="comments">Additional Comments</label><textarea id="comments"></textarea></li>
+                        <li><input type="hidden" value="true"/></li>
+                     </li>
             </fieldset>
+            <input type="submit" value="Submit this Contact" />
         </form>
         
         
