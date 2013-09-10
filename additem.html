@@ -22,7 +22,7 @@
                     <li><label for="fname">First Name:</label><input type="text" id="fname"/></li>
                     <li><label for="lname">Last Name:</label><input type="text" id="lname"/></li>
                     <li><label for="email">Email:</label><input type="email" id="email" placeholder="johndoe@abc.com"/></li>
-                    <li><label for="phone">Phone Number:</label><input type="text" id="phone" placeholder="123-456-7890"/></li>
+                    <li><label for="phone">Phone Number:</label><input type="tel" id="phone" placeholder="123-456-7890"/></li>
                 </ul>
                     <p>What is your relationship to this contact?</p>
                         <ul>
@@ -45,13 +45,15 @@
                             </optgroup>
                         </select>
                     </li>
-                        <li>How often do you communicate?<input type="range" name="rating"></li>
-                        <li><label for="birthday">Contact's Birthday</label><input type="text" id="birthday"/></li>
+                        <li>How often do you communicate?<input type="range" min="1" max="10" name="rating"></li>
+                        <li><label for="birthday">Contact's Birthday</label><input type="date" min="1900-01-01" id="birthday"/></li>
                         <li><label for="comments">Additional Comments</label><textarea id="comments"></textarea></li>
                         <li><input type="hidden" value="true"/></li>
                 </ul>
             </fieldset>
-            <input type="submit" value="Submit this Contact" />
+            <input type="submit" value="Submit this Contact" /><br>
+            <a href=#>Clear Data</a><br>
+            <a href=#>View Data</a>
         </form>
     </body>
 </html>
