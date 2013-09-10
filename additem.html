@@ -1,13 +1,14 @@
 <!DOCTYPE html>
+    <!--Project-1 Michael Greenwaldt Term 1309 -->
 <html>
     <head>
       <meta charset="utf-8"/>
-      <meta name= "description" content="My first web app"/>
+      <meta name="keywords" content="html5, mobile development, Full Sail University, Project 1"/>
+      <meta name= "description" content="Contact-O contact app"/>
       <meta name="robots" content="index, follow"/>
       <meta name="viewport" content="user-scalable=no, width=device-width" />
       <meta name="MobileOptimized" content="320"/>
       <title>Contact-O</title>
-
     </head>
     <body>
         <hgroup>
@@ -23,14 +24,13 @@
                     <li><label for="email">Email:</label><input type="email" id="email" placeholder="johndoe@abc.com"/></li>
                     <li><label for="phone">Phone Number:</label><input type="text" id="phone" placeholder="123-456-7890"/></li>
                 </ul>
-                    <li>What is your relationship to this contact?
+                    <p>What is your relationship to this contact?</p>
                         <ul>
                             <li><input type="radio" value="Family" id="family" name="relation"/><label for="family">Family</label></li>
                             <li><input type="radio" value="Friend" id="friend" name="relation"/><label for="friend">Friend</label></li>
                             <li><input type="radio" value="Co-worker" id="co-worker" name="relation"/><label for="co-worker">Co-Worker</label></li>
                             <li><input type="radio" value="Bussiness" id="bussiness" name="relation"/><label for="bussiness">Bussiness Contact</label></li>
                         </ul>
-                    </li>
             </fieldset>
             <fieldset>
                 <legend>Extra Info</legend>
@@ -44,32 +44,14 @@
                                 <option value="Facetime">Facetime</option>
                             </optgroup>
                         </select>
-                        <li><label for="rate">How often do you communicate?</label><input type="range" name="rating"></li>
-                        <li><label for="birthday">Contact's Birthday</label><input type="date" id="birthday"/></li>
+                    </li>
+                        <li>How often do you communicate?<input type="range" name="rating"></li>
+                        <li><label for="birthday">Contact's Birthday</label><input type="text" id="birthday"/></li>
                         <li><label for="comments">Additional Comments</label><textarea id="comments"></textarea></li>
                         <li><input type="hidden" value="true"/></li>
-                     </li>
                 </ul>
             </fieldset>
             <input type="submit" value="Submit this Contact" />
         </form>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
     </body>
-    <footer>
-        
-        
-        
-        
-        
-    </footer>
 </html>
