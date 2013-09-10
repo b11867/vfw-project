@@ -7,7 +7,7 @@
       <meta name="robots" content="index, follow"/>
       <meta name="viewport" content="user-scalable=no, width=device-width" />
       <meta name="MobileOptimized" content="320"/>
-      <title>Contact Storage App</title>
+      <title>Contact-O</title>
 
     </head>
     <body>
@@ -16,18 +16,21 @@
             <h2>Please enter new contact information below</h2>
             </hgroup>
         <form action="" method="post">
-            <fieldset>
+            <fieldset id="basic info">
                 <legend>Information</legend>
                 <ul>
                     <li><label for="fname">First Name:</label><input type="text" id="fname"/></li>
                     <li><label for="lname">Last Name:</label><input type="text" id="lname"/></li>
-                    <li><label for="relation">Relationship:</label><input type="text" id="relation"/></li>
                     <li><label for="email">Email:</label><input type="email" id="email" placeholder="johndoe@abc.com"/></li>
-                    <li><label for="phone">Phone Number:</label><input type="numeric" id="phone"/></li>                
+                    <li><label for="phone">Phone Number:</label><input type="text" id="phone"/></li>
+                    <li><input type="radio" value="Family" id="family"/><label for="family">Family</label></li>
+                    <li><input type="radio" value="Friend" id="friend"/><label for="friend">Friend</label></li>
+                    <li><input type="radio" value="Co-worker" id="co-worker"/><label for="co-worker">Co-Worker</label></li>
+                    <li><input type="radio" value="Bussiness" id="bussiness"/><label for="bussiness">Bussiness Contact</label></li>
 
                 </ul>
             </fieldset>
-            <fieldset>
+            <fieldset id="optional info">
                 <legend>Questions</legend>
                 <ul>
                     <li></li>
