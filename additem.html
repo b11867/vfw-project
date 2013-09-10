@@ -13,13 +13,13 @@
         <hgroup>
             <h1>Contact-O</h1>
             <h2>Please enter new contact information below</h2>
-            </hgroup>
+        </hgroup>
         <form action="#" method="post">
-            <fieldset id="basic info">
+            <fieldset>
                 <legend>Information</legend>
                 <ul>
                     <li><label for="fname">First Name:</label><input type="text" id="fname"/></li>
-                    <li><label for="lname">Last Name:</label><input type="text" id="lname" required/></li>
+                    <li><label for="lname">Last Name:</label><input type="text" id="lname"/></li>
                     <li><label for="email">Email:</label><input type="email" id="email" placeholder="johndoe@abc.com"/></li>
                     <li><label for="phone">Phone Number:</label><input type="text" id="phone" placeholder="123-456-7890"/></li>
                 </ul>
@@ -32,10 +32,10 @@
                         </ul>
                     </li>
             </fieldset>
-            <fieldset id="optimized info">
-                <legend>Optimization</legend>
-                    <li>
-                        <label for="method">Preferred Communication</label>
+            <fieldset>
+                <legend>Extra Info</legend>
+                <ul>
+                    <li><label for="method">Preferred Communication</label>
                         <select id="method">
                             <optgroup label="Choose a method of Communication">
                                 <option value="Phone">Phone</option>
@@ -49,6 +49,7 @@
                         <li><label for="comments">Additional Comments</label><textarea id="comments"></textarea></li>
                         <li><input type="hidden" value="true"/></li>
                      </li>
+                </ul>
             </fieldset>
             <input type="submit" value="Submit this Contact" />
         </form>
