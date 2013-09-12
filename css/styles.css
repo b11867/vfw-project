@@ -1,0 +1,27 @@
+/*
+ title: Contact-O
+ */
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    width: 320 px;
+    text-align: center;
+    line-height: 
+    }
+header{
+    background-color:rgb(3,150,175);
+    line-height: 2.0em;
+    padding:5px;
+}
+h1,h2{
+    color: white;
+}
+span{
+    font-size: 28px;
+}
+a{
+    color: rgb(50,50,50);
+}
+p{
+    margin: 10px;
+}
